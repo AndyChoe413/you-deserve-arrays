@@ -1,12 +1,17 @@
 /******************
  * YOUR CODE HERE *
  ******************/
-
-
-
-
-
-
+const getFirstItemFrom = array => array[0]
+const getLastItemFrom = array => array[array.length - 1]
+const getIndex3 = arr => {
+  if (arr.length >= 4) return arr[3]
+  else return arr[arr.length - 1]
+}
+const isLongList = arr => arr.length >= 10 ? true:false
+const firstItemIsNumber = arr => typeof arr[0] === 'number' ? true : false
+const secondCharOfThirdString = arr => {
+  if (typeof arr[2][1] === 'string') return arr[2][1];
+}
 
  /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
